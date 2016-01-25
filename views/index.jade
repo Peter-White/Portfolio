@@ -1,0 +1,16 @@
+extends layout
+
+block content
+
+  if (user && user.username === "TheMasterOfUnlocking")
+    p Hello Master, I have opened for you.
+    a(href="/logout") Logout
+    p Do it
+  else if (user)
+    p You are currently logged in as #{user.username}
+    a(href="/logout") Logout
+  else
+    a(href="/login") Login
+    br
+    a(href="/register") Register
+
