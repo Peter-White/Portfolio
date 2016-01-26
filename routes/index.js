@@ -40,13 +40,13 @@ router.post('/register', function(req, res) {
 });
 
 //Routes for Posts
-router.get('/api', function(req, res) {
+router.get('/post', function(req, res) {
   Post.find({}, function(error, postList) {
     res.json(postList);
   });
 });
 
-router.get('/api/:id', function(req, res) {
+router.get('/post/:id', function(req, res) {
   Post.find({
     _id: req.params.id
   }, function(error, post) {
@@ -54,19 +54,25 @@ router.get('/api/:id', function(req, res) {
   });
 });
 
-router.post('/api', function(req, res) {
-  Post.create(req.body, function(error, post) {
-    console.log(req.body);
-    if (error) {
-      console.log(error);
-      res.sendStatus(400);
-    } else {
-      res.sendStatus(201);
-    }
-  });
+// router.post('/post', function(req, res) {
+//   Post.create(req.body, function(error, post) {
+//     console.log(req.body);
+//     if (error) {
+//       console.log(error);
+//       res.sendStatus(400);
+//     } else {
+//       res.sendStatus(201);
+//     }
+//   });
+// });
+
+router.post('/post', function(req, res) {
+    Post.create(new Post({
+      content : req.body.content
+    }))
 });
 
-router.patch('/api/:id', function(req, res) {
+router.patch('/post/:id', function(req, res) {
   Post.findByIdAndUpdate(req.params.id, req.body, {
     overwrite: false
   }, function(error, post) {
@@ -79,7 +85,7 @@ router.patch('/api/:id', function(req, res) {
   });
 });
 
-router.delete('/api/:id', function(req, res) {
+router.delete('/post/:id', function(req, res) {
   Post.remove({
     _id: req.params.id
   }, function(error) {
@@ -92,41 +98,41 @@ router.delete('/api/:id', function(req, res) {
   });
 });
 
-//jade rendered routes
-router.get('/', function(req, res) {
-  Post.find({}, function(error, postList) {
-    if(error){
-      console.log('Error getting posts');
-    } else {
-        res.render('posts', { posts: postList });
-    }
-  });
-});
+// //jade rendered routes
+// router.get('/', function(req, res) {
+//   Post.find({}, function(error, postList) {
+//     if(error){
+//       console.log('Error getting posts');
+//     } else {
+//         res.render('post', { posts: postList });
+//     }
+//   });
+// });
 
-router.get('/posts/:id', function(req, res) {
-  Post.find({
-    _id: req.params.id
-  }, function(error, post) {
-    if (error) {
-      console.log('Error getting one post');
-    } else {
-        res.render('post', { posts: post });
-    }
-  });
-});
+// router.get('/:id', function(req, res) {
+//   Post.find({
+//     _id: req.params.id
+//   }, function(error, post) {
+//     if (error) {
+//       console.log('Error getting one post');
+//     } else {
+//         res.render('post', { posts: post });
+//     }
+//   });
+// });
 
-router.delete('/posts/:id', function(req, res) {
-  Post.remove({
-    _id: req.params.id
-  }, function(error) {
-    if (error) {
-      console.log(error);
-      res.sendStatus(400);
-    } else {
-      res.sendStatus(204);
-    }
-  });
-});
+// router.delete('/:id', function(req, res) {
+//   Post.remove({
+//     _id: req.params.id
+//   }, function(error) {
+//     if (error) {
+//       console.log(error);
+//       res.sendStatus(400);
+//     } else {
+//       res.sendStatus(204);
+//     }
+//   });
+// });
 
 // Routes for Login
 router.get('/login', function(req, res) {

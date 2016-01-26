@@ -12,3 +12,8 @@ block content
     a(href="/login") Login
     br
     a(href="/register") Register
+
+  form(role='form', action="/post", method="post", style='max-width: 1000px;')
+    .form-group
+      input.form-control(type='text', name="content", placeholder='Speak your mind.')
+    button.btn.btn-defualt(type='submit') Submit
