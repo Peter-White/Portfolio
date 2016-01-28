@@ -69,8 +69,7 @@ router.get('/post/:id', function(req, res) {
 router.post('/post', function(req, res) {
     Post.create(new Post({
       content : req.body.content,
-      created_at : req.body.created_at,
-      author : req.body.author
+      created_at : req.body.created_at
     }))
 });
 

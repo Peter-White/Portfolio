@@ -1,27 +1,27 @@
-extends layout
-
+extend layout
 block content
 
-  if (user && user.username === "TheMasterOfUnlocking")
-    p Hello Master, I have opened for you.
+      if (user && user.username === "TheMasterOfUnlocking")
+        p Hello Master, I have opened for you.
 
-    form(role='form', action="/post", method="post", style='max-width: 1000px;')
-    .form-group
-      input.form-control(type='text', name="content", placeholder='Speak your mind.')
-    button.btn.btn-defualt(type='submit') Submit
+        form(role='form', action="/post", method="post", style='max-width: 1000px;')
+          .form-group
+            input.form-control(type='text', name="content", placeholder='Speak your mind.')
+          button.btn.btn-defualt(type='submit') Submit
 
-    br
-    a(href="/logout") Logout
-  else if (user)
-    p You are currently logged in as #{user.username}
+        br
+        a(href="/logout") Logout
+      else if (user)
+        p You are currently logged in as #{user.username}
 
-    form(role='form', action="/post", method="post", style='max-width: 1000px;')
-    .form-group
-      input.form-control(type='text', name="content", placeholder='Speak your mind.')
-    button.btn.btn-defualt(type='submit') Submit
+        form(role='form', action="/post", method="post", style='max-width: 1000px;')
+          .form-group
+            input.form-control(type='text', name="content", placeholder='Speak your mind.')
+          button.btn.btn-defualt(type='submit') Submit
 
-    a(href="/logout") Logout
-  else
-    a(href="/login") Login
-    br
-    a(href="/register") Register
+        br
+        a(href="/logout") Logout
+      else
+        a(href="/login") Login
+        br
+        a(href="/register") Register

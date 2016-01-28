@@ -1,12 +1,9 @@
 var mongoose = require('mongoose');
-var User = require('./user');
-var Schema = mongoose.Schema;
 
-var postSchema = new Schema({
+var postSchema = new mongoose.Schema({
 
   content: String,
-  created_at: { type: Date },
-  author: { type: Schema.Types.ObjectId, ref: 'user' }
+  created_at: { type: Date }
 
 });
 
