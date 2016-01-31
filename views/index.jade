@@ -1,18 +1,21 @@
 extend layout
 block content
 
+    script(src='/javascripts/postController.js')
+
     .postList#postList
 
     if (user)
+
       if user.username === "TheMasterOfUnlocking"
         p Hello Master, I have opened for you.
+        p#company.company #{user.companyName}
       else
-        p You are currently logged in as #{user.username}
+        p#username.username #{user.username}
+        p#company.company #{user.companyName}
 
-      form(role='form', action="/posts", method="post", style='max-width: 1000px;')
-        .form-group
-          input.form-control(type='text', name="content", placeholder='Speak your mind.')
-        button.btn.btn-defualt(type='submit') Submit
+      input#content.content(type='text', placeholder='Speak your mind.')
+      button#submit.submit(type='submit') Submit
       br
       a(href="/logout") Logout
     else

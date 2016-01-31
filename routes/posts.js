@@ -22,7 +22,9 @@ router.get('/:id', function(req, res) {
 router.post('/', function(req, res) {
     Post.create(new Post({
       content : req.body.content,
-      created_at : req.body.created_at
+      created_at : req.body.created_at,
+      user : req.body.user,
+      company: req.body.company
     }))
 });
 

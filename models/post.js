@@ -1,10 +1,12 @@
 var mongoose = require('mongoose');
+var autopopulate = require('mongoose-autopopulate');
 
 var postSchema = new mongoose.Schema({
 
   content: String,
-  created_at: { type: Date }
-
+  created_at: { type: Date },
+  user: String,
+  company: String
 });
 
 postSchema.pre('save', function(next){
