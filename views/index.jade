@@ -1,18 +1,25 @@
 extend layout
 block content
 
-    script(src='/javascripts/postController.js')
-
+    script(src='/javascripts/postGet.js')
     .postList#postList
 
     if (user)
+      script(src='/javascripts/postPost.js')
+      script.
+        var userName = "#{user.username}";
+        var companyName = "#{user.companyName}";
+        $(function(){
+          $('#company').text(companyName);
+          $('#username').text(userName);
+        });
 
       if user.username === "TheMasterOfUnlocking"
         p Hello Master, I have opened for you.
-        p#company.company #{user.companyName}
+        p#company.company
       else
-        p#username.username #{user.username}
-        p#company.company #{user.companyName}
+        p#username.username
+        p#company.company
 
       input#content.content(type='text', placeholder='Speak your mind.')
       button#submit.submit(type='submit') Submit
