@@ -6,6 +6,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { user : req.user });
+  res.render('index', { title : "The White Zone" });
 });
 
 // Routes for Register

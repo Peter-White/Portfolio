@@ -18,12 +18,11 @@ $('#submit').on('click', function() {
       data: post,
       success: function(postList) {
         $postList.append('<p data-id="' + post.id + '">' + post.content + '</p>');
-        alert('Thank you for caring');
-        // reset();
       },
       error: function() {
         alert('I\'m sorry but your submission information is invalid');
       }
       });
+     $content.val('');
 });
 });

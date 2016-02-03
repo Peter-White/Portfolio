@@ -1,7 +1,30 @@
 extend layout
 block content
-
     script(src='/javascripts/postGet.js')
+    script.
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+    #intro
+      p You unlock this page with the key of your browser. Beyond it is developer - a developer of pages, a developer of databases, a developer of apps. You're moving into a website of both front-end and back-end, of things and ideas. You've just crossed over into the page of
+      h1 PETER WHITE
+      img(src="images/Peter_White.png" alt="" class="desaturate")
+
+    .abouttitle
+      h1 About Me
+
+    #about
+      br
+      p
+        | Hello. My name is Peter and I want to learn web design. I've always been technology
+        a(href='pages/baby.html') oriented
+        | . My father was in IT and my mother worked for Adobe so there were always a lot of computers around the house. Some dads teach their kid how to throw a fastball. Mine taught me how to overclock a
+        a(href='pages/pete.html') Pentium II
+        | . I went to college and got a degree in Computer Systems Technologies. But I noticed I liked the programing courses more than the networking courses. So I went back to get a degree in Computer Science. That's when I noticed I liked programing more than
+        a(href='pages/college.html') college
+        | . So I enrolled at
+        a(href='pages/level.html') General Assembly
+        |  and took a full immersion course in web development. Now I want to bring my talent and energy to a workplace that's not afraid to trade experience for enthusiasm.
+
     .postList#postList
 
     if (user)
