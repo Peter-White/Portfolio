@@ -184,8 +184,9 @@ a:active {
 
 /*Login*/
 
-.logincontainer h1 {
-
+.logincontainer {
+  padding-top: 6%;
+  padding-bottom: 9.8%;
 }
 
 /*Projects*/
@@ -342,6 +343,17 @@ a:active {
 .tree #tv h2, #tv2 h2 {
   padding-top: 10%;
   font-size: 50px;
+}
+
+/*Login Container*/
+
+.logincontainer {
+  padding-left: 2%;
+}
+
+.logincontainer h1 {
+  font-family: 'Fontdiner Swanky', cursive;
+  color: white;
 }
 
 /*Footer*/
