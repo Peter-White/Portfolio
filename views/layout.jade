@@ -21,7 +21,8 @@ html
     link(href='https://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css')
-    link(<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css')
+    link(link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css')
   body
     header
         #zone(onClick="location.href='http://localhost:3000'")
@@ -42,12 +43,13 @@ html
         else
           #login
             a(href="/login") Login
+            br
             a(href="/register") Register
     block content
 
     footer
       a#email(href='mailto:pwhite007@icloud.com') Email Me
       a.twitter-follow-button(href='https://twitter.com/youcannotbeatus', data-show-count='false') Follow @youcannotbeatus
-      a(href='https://www.linkedin.com/pub/peter-allan-white/b0/971/275')
+      a.twitter(href='https://www.linkedin.com/pub/peter-allan-white/b0/971/275')
         img.linkedin-button(src='https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png', width='160', height='33', border='0', alt="View Peter Allan White's profile on LinkedIn")
       a#resume(href='images/Resume.docx') My Resume
