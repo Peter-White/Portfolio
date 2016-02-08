@@ -389,6 +389,15 @@ a:active {
   width: 500px;
 }
 
+.logincontainer button {
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  font-family: 'Shadows Into Light', cursive;
+}
+
 /*Register Container*/
 
 .registercontainer {
@@ -418,7 +427,7 @@ a:active {
   font-size: 25px;
   background-color: black;
   color: white;
-  border: 5px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 5px;
   font-family: 'Shadows Into Light', cursive;
 }
