@@ -128,7 +128,7 @@ img.desaturate {
 
 #about {
   background-color: #484848;
-  background-image: url('images/FNV_Needlenose.png');
+  background-image: url('../images/FNV_Needlenose.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -336,7 +336,7 @@ a:active {
 .tree #tv, #tv2 {
   width: 300px;
   height: 210px;
-  background-image: url("images/giphy2.gif");
+  background-image: url('../images/giphy2.gif');
   border-radius: 10%;
   display: inline-block;
   text-align: center;
