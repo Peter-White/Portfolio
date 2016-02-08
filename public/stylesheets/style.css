@@ -381,6 +381,31 @@ a:active {
   width: 500px;
 }
 
+/*Register Container*/
+
+.registercontainer {
+  padding-left: 2%;
+}
+
+.registercontainer h1 {
+  font-family: 'Fontdiner Swanky', cursive;
+  color: white;
+  font-size: 50px;
+}
+
+.registercontainer form .form-group lable {
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+}
+
+.registercontainer form .form-group input {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  font-size: 25px;
+  width: 500px;
+}
+
 /*Message Box*/
 
 #postList {

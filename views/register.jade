@@ -2,22 +2,33 @@ extend layout
 
 block content
 
-  .container
+  .registercontainer
     h1 Register Page
-    p.lead Say something I'm giving up on you
     br
     form(role='form', action="/register", method="post", style='max-width: 300px;')
       .form-group
+        lable First Name:
+        br
         input.form-control(type='text', name="firstName", placeholder='First Name')
       .form-group
+        lable Last Name:
+        br
         input.form-control(type='text', name="lastName", placeholder='Last Name')
       .form-group
+        lable Company Name:
+        br
         input.form-control(type='text', name="companyName", placeholder='Company Name')
       .form-group
+        lable Email Address:
+        br
         input.form-control(type='text', name="emailAddress", placeholder='Email Address')
       .form-group
+        lable Username:
+        br
         input.form-control(type='text', name="username", placeholder='Username')
       .form-group
+        lable Password:
+        br
         input.form-control(type='password', name="password", placeholder='Password')
       button.btn.btn-defualt(type='submit') Submit
       &nbsp;
