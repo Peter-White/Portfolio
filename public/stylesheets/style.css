@@ -379,11 +379,27 @@ a:active {
 }
 
 #postList h2 {
-  background:
+  font-family: 'Bree Serif', serif;
+}
+
+#postList p {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#content {
+  font-size: 18px;
+  width: 615px;
+  border-radius: 10px;
 }
 
 .chandler {
   color: white;
+}
+
+#postInput {
+  padding-top: 5%;
+  padding-bottom: 50%;
 }
 
 /*Footer*/

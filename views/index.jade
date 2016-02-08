@@ -108,13 +108,13 @@ block content
 
     .postList#postList
     br
-    if (user)
-      input#content.content(type='text', placeholder='Speak your mind.')
-      button#submit.submit(type='submit') Submit
-      br
-      a(href="/logout") Logout
-    else
-      p.chandler Please login to leave a comment.
+    .postInput#postInput
+      if (user)
+        input#content.content(type='text', placeholder='Speak your mind.')
+        br
+        button#submit.submit(type='submit') Submit
+      else
+        h2.chandler Please login to leave a comment.
 
     #projects
       #glitch(data-text='My Projects') My Projects
