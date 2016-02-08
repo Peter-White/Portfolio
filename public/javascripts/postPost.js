@@ -17,6 +17,7 @@ $('#submit').on('click', function() {
       url: 'http://localhost:3000/posts',
       data: post,
       success: function(postList) {
+        $postList.append('<h2 data-id="' + post.id + '">' + post.user + ' of ' + post.company +  ' says: </h2>');
         $postList.append('<p data-id="' + post.id + '">' + post.content + '</p>');
       },
       error: function() {

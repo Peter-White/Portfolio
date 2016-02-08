@@ -372,6 +372,20 @@ a:active {
   width: 500px;
 }
 
+/*Message Box*/
+
+#postList {
+  color: white;
+}
+
+#postList h2 {
+  background:
+}
+
+.chandler {
+  color: white;
+}
+
 /*Footer*/
 
 footer {
