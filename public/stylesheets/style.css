@@ -82,23 +82,32 @@ img.desaturate {
 
 /*Titles*/
 
-.abouttitle, .skillstitle, .commentstitle {
+.abouttitle, .skillstitle, .commentstitle, .messagetitle {
   color: white;
   text-align: center;
   font-size: 500%;
-  padding-top: 50%;
-  padding-bottom: 50%;
   font-family: 'Lobster', cursive;
   -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
     animation: mymove 3s infinite;
 }
 
+.abouttitle {
+  padding-top: 50%;
+  padding-bottom: 50%;
+}
+
 .skillstitle {
   padding-top: 20%;
+  padding-bottom: 50%;
 }
 
 .commentstitle {
   padding-top: 50%;
+  padding-bottom: 50%;
+}
+
+.messagetitle {
+  padding-bottom: 50%;
 }
 
 /* Chrome, Safari, Opera */
@@ -302,7 +311,7 @@ a:active {
 
 .tree {
   position: relative;
-  padding-bottom: 100%;
+  padding-bottom: 60%;
   width: 38%;
   margin: 0 auto;
 }
@@ -399,7 +408,7 @@ a:active {
 
 #postInput {
   padding-top: 5%;
-  padding-bottom: 50%;
+  padding-bottom: 60%;
 }
 
 /*Footer*/
