@@ -8,7 +8,7 @@ $(function(){
     url: 'http://localhost:3000/posts',
     success: function(posts) {
       $.each(posts, function(i, post) {
-        $postList.append('<p data-id="' + post.id + '">' + post.user + ' of ' + post.company +  ' says: </p>');
+        $postList.append('<h2 data-id="' + post.id + '">' + post.user + ' of ' + post.company +  ' says: </h2>');
         $postList.append('<p data-id="' + post.id + '">' + post.content + '</p>');
     });
   },

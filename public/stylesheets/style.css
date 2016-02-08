@@ -349,11 +349,27 @@ a:active {
 
 .logincontainer {
   padding-left: 2%;
+  margin-top: -2%;
+  margin-bottom: -5.8%;
 }
 
 .logincontainer h1 {
   font-family: 'Fontdiner Swanky', cursive;
   color: white;
+  font-size: 50px;
+}
+
+.logincontainer form .form-group lable {
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+}
+
+.logincontainer form .form-group input {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  font-size: 25px;
+  width: 500px;
 }
 
 /*Footer*/
