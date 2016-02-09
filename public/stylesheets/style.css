@@ -41,16 +41,23 @@ header #zone h1 {
 
 header #login {
   position: relative;
-  margin-left: 75%;
-  padding-top: 1%;
+  margin-left: 60%;
+  padding-top: 4%;
+  font-family: 'Bree Serif', serif;
 }
 
 header #login #username {
-  font-size: 20px;
+  float: left;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 25px;
+  margin-top: 0%;
 }
 
 header #login a {
   font-size: 25px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 /*Intro*/
@@ -355,6 +362,10 @@ a:active {
 
 .tree #tv2 {
   margin: 0 43%;
+}
+
+.tree #tv {
+  margin: 0 5%;
 }
 
 .tree #tv h2, #tv2 h2 {
