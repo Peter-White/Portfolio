@@ -12,18 +12,23 @@ $('#submit').on('click', function() {
       company: $company
     };
 
-    $.ajax({
-      type: 'POST',
-      url: 'http://localhost:3000/posts',
-      data: post,
-      success: function(postList) {
-        $postList.append('<h2 data-id="' + post.id + '">' + post.user + ' of ' + post.company +  ' says: </h2>');
-        $postList.append('<p data-id="' + post.id + '">' + post.content + '</p>');
-      },
-      error: function() {
-        alert('I\'m sorry but your submission information is invalid');
-      }
-      });
+    if ($content.val() === '') {
+      alert("You have entered an empty value. Please try again.");
+    }
+    else {
+      $.ajax({
+        type: 'POST',
+        url: 'http://localhost:3000/posts',
+        data: post,
+        success: function(postList) {
+          $postList.append('<h2 data-id="' + post.id + '">' + post.user + ' of ' + post.company +  ' says: </h2>');
+          $postList.append('<p data-id="' + post.id + '">' + post.content + '</p>');
+        },
+        error: function() {
+          alert('I\'m sorry but your submission information is invalid');
+        }
+        });
+    }
      $content.val('');
 });
 });
