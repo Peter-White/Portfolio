@@ -486,6 +486,12 @@ a:active {
   font-family: 'Shadows Into Light', cursive;
 }
 
+/*Error*/
+
+#sorry {
+  color: white;
+}
+
 /*Footer*/
 
 footer {
