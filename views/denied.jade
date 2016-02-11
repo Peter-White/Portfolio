@@ -1,0 +1,30 @@
+extend layout
+
+block content
+  script.
+    $(function(){
+      $errorpic = $('#errorpic');
+
+      var undertale = (Math.floor(Math.random() * 6) + 1);
+      if (undertale === 1)
+        $errorpic.append( '<img src="images/error/toriel.png" alt="" class="desaturate">' );
+      else if (undertale === 2)
+        $errorpic.append('<img src="images/error/muffet.png" alt="" class="desaturate">');
+      else if (undertale === 3)
+        $errorpic.append('<img src="images/error/dummy.png" alt="" class="desaturate">');
+      else if (undertale === 4)
+        $errorpic.append('<img src="images/error/uboa.png" alt="" class="desaturate">');
+      else if (undertale === 5)
+        $errorpic.append('<img src="images/error/red.png" alt="" class="desaturate">');
+      else
+        $errorpic.append('<img src="images/error/papyrus.png" alt="" class="desaturate">');
+    });
+
+  .errorpic#errorpic
+  h2#sorry Sorry but your login information is invalid, please try again or register a new account.
+//- extend layout
+
+//- block content
+//-   h1= message
+//-   h2= error.status
+//-   pre #{error.stack}

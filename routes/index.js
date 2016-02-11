@@ -5,13 +5,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { user : req.user });
-  res.render('index', { title : "The White Zone" });
+  res.render('index', { user : req.user, title : "The White Zone" });
 });
 
 // Routes for Register
 router.get('/register', function(req, res) {
-    res.render('register', { });
+    res.render('register', { title : "Register - The White Zone" });
 });
 
 router.post('/register', function(req, res) {
@@ -41,12 +40,12 @@ router.post('/register', function(req, res) {
 
 // Routes for Login
 router.get('/login', function(req, res) {
-    res.render('login', { user : req.user });
+    res.render('login', { user : req.user, title : "Login - The White Zone"  });
 });
 
 router.post('/login', passport.authenticate('local', {
   successRedirect: '/',
-  failureRedirect: '/register'
+  failureRedirect: '/denied'
 }));
 
 // Routes for Logout

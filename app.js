@@ -11,7 +11,8 @@ var LocalStrategy = require('passport-local').Strategy;
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var posts = require('./routes/posts');
-var error = require('./routes/error');
+var deniedRouter = require('./routes/denied');
+var funny = require('./routes/funny');
 
 var Post = require('./models/post');
 
@@ -40,7 +41,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/posts', posts);
-app.use('/error', error);
+app.use('/denied', deniedRouter);
+app.use('/funny', funny);
 
 // passport config
 var User = require('./models/user');
