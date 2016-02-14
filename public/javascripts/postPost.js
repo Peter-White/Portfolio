@@ -19,7 +19,6 @@ $('#submit').on('click', function() {
       $.ajax({
         type: 'POST',
         url: 'http://localhost:3000/posts',
-        dataType: 'text',
         data: post,
         success: function(post) {
           // Not working, need to solve later
