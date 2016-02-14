@@ -19,16 +19,19 @@ $('#submit').on('click', function() {
       $.ajax({
         type: 'POST',
         url: 'http://localhost:3000/posts',
+        dataType: 'text',
         data: post,
-        success: function(postList) {
+        success: function(post) {
+          // Not working, need to solve later
           $postList.append('<h2 data-id="' + post.id + '">' + post.user + ' of ' + post.company +  ' says: </h2>');
           $postList.append('<p data-id="' + post.id + '">' + post.content + '</p>');
+          alert('Works');
         },
         error: function() {
           alert('I\'m sorry but your submission information is invalid');
         }
         });
     }
-     $content.val('');
+    $content.val('');
 });
 });

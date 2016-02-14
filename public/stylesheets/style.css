@@ -77,7 +77,7 @@ header #login a {
 #intro p {
   color: white;
   font-size: 150%;
-  font-family: 'Righteous', cursive;
+  font-family: 'Merriweather', serif;
   margin-left: 5%;
   margin-right: 5%;
   padding-top: 5%;
@@ -468,6 +468,7 @@ a:active {
 .chandler {
   color: white;
   margin-left: 30px;
+  font-family: 'Merriweather', serif;
 }
 
 #postInput {
@@ -486,11 +487,15 @@ a:active {
   font-family: 'Shadows Into Light', cursive;
 }
 
-/*Error*/
+/*Access Denide*/
 
 #sorry {
   color: white;
+  font-family: 'Merriweather', serif;
+  text-align: center;
 }
+
+/*Error*/
 
 #errorcontainer {
   padding-top: 5%;

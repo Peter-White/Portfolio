@@ -21,10 +21,10 @@ block content
     });
 
   .errorpic#errorpic
-  h2#sorry Sorry but your login information is invalid, please try again or register a new account.
-//- extend layout
 
-//- block content
-//-   h1= message
-//-   h2= error.status
-//-   pre #{error.stack}
+  h2#sorry
+    | Sorry but your login information is invalid, please&nbsp;
+    a(href='/login') try again
+    |  or&nbsp;
+    a(href='/register') register a new account
+    | .
