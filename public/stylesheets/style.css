@@ -492,6 +492,12 @@ a:active {
   color: white;
 }
 
+#errorcontainer {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: white;
+}
+
 /*Footer*/
 
 footer {
