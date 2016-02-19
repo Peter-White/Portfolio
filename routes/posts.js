@@ -20,12 +20,20 @@ router.get('/:id', function(req, res) {
 
 /* GET post listing. */
 router.post('/', function(req, res) {
-    Post.create(new Post({
-      content : req.body.content,
-      created_at : req.body.created_at,
-      user : req.body.user,
-      company: req.body.company
-    }))
+  console.log(req.body);
+  Post.create({
+    content : req.body.content,
+    created_at : req.body.created_at,
+    user : req.body.user,
+    company: req.body.company
+  }, function(error) {
+    if (error) {
+      console.log(error);
+      res.sendStatus(400);
+    } else {
+      res.sendStatus(204);
+    }
+    });
 });
 
 router.patch('/:id', function(req, res) {
