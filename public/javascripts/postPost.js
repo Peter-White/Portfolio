@@ -22,9 +22,8 @@ $('#submit').on('click', function() {
         data: post,
         success: function(post) {
           // Not working, need to solve later
-          $postList.append('<h2 data-id="' + post.id + '">' + post.user + ' of ' + post.company +  ' says: </h2>');
-          $postList.append('<p data-id="' + post.id + '">' + post.content + '</p>');
-          alert('Works');
+            $postList.append('<h2><span style="color:grey;font-weight:bold">' + post.user + '</span> of <span style="color:grey;font-weight:bold">' + post.company + '</span> says: </h2>');
+            $postList.append('<p>' + post.content + '</p>');
         },
         error: function() {
           alert('I\'m sorry but your submission information is invalid');
