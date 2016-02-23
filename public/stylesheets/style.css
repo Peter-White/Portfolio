@@ -514,9 +514,10 @@ footer {
   padding-bottom: 2%;
 }
 
-footer #email, #resume, .twitter-follow-button, .twitter {
+footer #email, #resume, .twitter-follow-button, .twitter, #github {
   font-size: 200%;
   font-family: 'Lobster', cursive;
   padding-right: 2%;
   padding-left: 2%;
 }
+
