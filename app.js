@@ -52,6 +52,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 // mongoose
+
 var uristring =
   process.env.MONGOLAB_URI ||
   process.env.MONGOHQ_URL ||

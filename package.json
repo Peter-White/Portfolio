@@ -1,17 +1,47 @@
 {
-  "name": "portfolio",
-  "version": "0.0.0",
+  "name": "thewhitezone",
+  "version": "1.0.1",
   "private": true,
+  "engines": {
+    "node": "5.6.0"
+  },
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "~1.13.2",
-    "cookie-parser": "~1.3.5",
-    "debug": "~2.2.0",
-    "express": "~4.13.1",
-    "jade": "~1.11.0",
-    "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
-  }
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "debug": "*",
+    "express": "*",
+    "express-session": "^1.13.0",
+    "jade": "*",
+    "kerberos": "*",
+    "mongodb": "*",
+    "mongoose": "^4.4.3",
+    "mongoose-autopopulate": "^0.4.0",
+    "morgan": "*",
+    "node": "0.0.0",
+    "npm": "3.6.0",
+    "passport": "^0.3.2",
+    "passport-local": "*",
+    "passport-local-mongoose": "^4.0.0",
+    "serve-favicon": "*"
+  },
+  "description": "This is my portfolio website creaded using Nodejs / Express / Jade. This website features information about me and my endeavors into FullStack developement as well as links to my other works. It utilizes Passport authentication for registered users to posts their comments on to the webpage.",
+  "main": "app.js",
+  "devDependencies": {
+    "express-session": "^1.13.0",
+    "karma": "^0.13.21",
+    "mongoose": "^4.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/thewhitezone.git"
+  },
+  "keywords": [
+    "profile",
+    "webpage"
+  ],
+  "author": "Peter White",
+  "license": "MIT"
 }

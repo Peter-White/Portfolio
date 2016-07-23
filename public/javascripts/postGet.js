@@ -5,7 +5,7 @@ $(function(){
 
   $.ajax({
       type: 'GET',
-    url: 'http://localhost:3000/posts',
+    url: '/posts',
     success: function(posts) {
       $.each(posts, function(i, post) {
         $postList.append('<h2 data-id="' + post.id + '">' + '<span style="color:grey;font-weight:bold">' + post.user + '</span>' + ' of ' +'<span style="color:grey;font-weight:bold">' + post.company + '</span>' +  ' says: </h2>');

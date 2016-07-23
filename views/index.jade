@@ -3,7 +3,7 @@ block content
     script(src='/javascripts/postGet.js')
 
     #intro
-      p You unlock this page with the key of your browser. Beyond it is developer - a developer of pages, a developer of databases, a developer of apps. You're moving into a website of both front-end and back-end, of things and ideas. You've just crossed over into the page of
+      p You unlock this page with the key of your browser. Beyond it is a developer - a developer of pages, a developer of databases, a developer of apps. You're moving into a website of both front-end and back-end, of things and ideas. You've just crossed over into the page of
       h1 PETER WHITE
       img(src="images/Peter_White.png" alt="" class="desaturate")
 
@@ -14,13 +14,13 @@ block content
       br
       p
         | Hello. My name is Peter and I want to learn web design. I've always been technology&nbsp;
-        a(href='http://localhost:3000/funny/baby') oriented
+        a(href='/funny/baby') oriented
         | . My father was in IT and my mother worked for Adobe so there were always a lot of computers around the house. Some dads teach their kid how to throw a fastball. Mine taught me how to overclock a&nbsp;
-        a(href='http://localhost:3000/funny/pete') Pentium II
+        a(href='/funny/pete') Pentium II
         | . I went to college and got a degree in Computer Systems Technologies. But I noticed I liked the programing courses more than the networking courses. So I went back to get a degree in Computer Science. That's when I noticed I liked programing more than&nbsp;
-        a(href='http://localhost:3000/funny/college') college
+        a(href='/funny/college') college
         | . So I enrolled at&nbsp;
-        a(href='http://localhost:3000/funny/level') General Assembly
+        a(href='/funny/level') General Assembly
         |  and took a full immersion course in web development. Now I want to bring my talent and energy to a workplace that's not afraid to trade experience for enthusiasm.
 
     .skillstitle
@@ -119,7 +119,12 @@ block content
 
     #projects
       #glitch(data-text='My Projects') My Projects
-      a(href='http://peter-white.github.io/petition_site_app/')
-        img#fox(src='images/fox.png', width='30%', height='20%')
-      a(href='http://peter-white.github.io/play4free-githubpages/')
-        img#games(src='images/games.png', width='30%', height='20%')
+      table(style='width:100%')
+        tr
+          td
+            a(href='http://petfoxpetition.herokuapp.com/')
+              img#fox(src='images/fox.png', width='auto', height='30%')
+          td
+            a(href='http://peter-white.github.io/play4free-githubpages/')
+              img#games(src='images/games.png', width='auto', height='30%')
+

@@ -107,22 +107,28 @@ img.desaturate {
 }
 
 .abouttitle {
-  padding-top: 50%;
-  padding-bottom: 50%;
+  padding-top: 40%;
+  padding-bottom: 45%;
 }
 
 .skillstitle {
-  padding-top: 20%;
-  padding-bottom: 50%;
+  padding-top: 13%;
+  padding-bottom: 45%;
 }
 
 .commentstitle {
-  padding-top: 50%;
+  padding-top: 30%;
   padding-bottom: 50%;
 }
 
 .messagetitle {
   padding-bottom: 50%;
+}
+
+/*Pictures*/
+
+#baby, #college, #pete, #level {
+  height: 475px;
 }
 
 /* Chrome, Safari, Opera */
@@ -487,7 +493,7 @@ a:active {
   font-family: 'Shadows Into Light', cursive;
 }
 
-/*Access Denide*/
+/*Access Denied*/
 
 #sorry {
   color: white;
@@ -521,3 +527,65 @@ footer #email, #resume, .twitter-follow-button, .twitter, #github {
   padding-left: 2%;
 }
 
+/*Mobile*/
+
+@media (max-width: 992px) {
+  header #zone img {
+    position: absolute;
+    height: 100px;
+    padding-top: 1%;
+    padding-left: 1%;
+  }
+
+  header {
+    background-color: #919191;
+    padding-bottom: 20px;
+    margin-top: -0.5%;
+    margin-left: -0.5%;
+    margin-right: -0.5%;
+    height: 85px;
+  }
+
+  .abouttitle, .skillstitle, .commentstitle, .messagetitle {
+    font-size: 250%;
+  }
+
+/*Skill Tree*/
+
+.tree {
+  position: relative;
+  padding-bottom: 60%;
+  margin: 0 auto;
+}
+
+.tree #line {
+  background-color: lightgrey;
+  height: 50px;
+  width: 5px;
+  position: center;
+  margin: 0 auto;
+}
+
+.tree h1 {
+  font-size: 300%
+}
+
+/*Skills*/
+
+.tree #tv, #tv2 {
+  width: 250px;
+  height: 160px;
+}
+
+.tree #tv2 {
+  margin: 0 -10%;
+}
+
+.tree #tv {
+  margin: 0 -10%;
+}
+
+.tree #tv h2, #tv2 h2 {
+  padding-top: 12%;
+  font-size: 30px;
+}
